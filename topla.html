@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <!-- <script src="app.js"></script> --> 
+  
+</head>
+<body>
+    <input type="text" name="number1" id="number1">
+    <input type="text" name="number2" id="number2">
+    <button type="button" name="sum" id="sum" >Sum</button>
+    <input type="text" name="result" id="result">
+    
+</body>
+<script>
+    function topla(){
+        var number1 = parseInt(document.getElementById("number1").value) || 0;
+        var number2 = parseInt(document.getElementById("number2").value) || 0;
+        
+        var result = number1 + number2;
+        
+        document.getElementById("result").value = result;
+    }
+
+    function topla2(number1, number2){
+        return parseInt(number1) + parseInt(number2);
+    }
+
+  
+    
+    sum.onclick = function (){
+        var number1 = parseInt(document.getElementById("number1").value) || 0;
+        var number2 = parseInt(document.getElementById("number2").value) || 0;
+        var result = topla2(number1, number2);
+    
+        var sum = document.getElementById("sum");
+        document.getElementById("result").value = result;
+    }
+
+
+    
+
+
+    </script>
+</html>
